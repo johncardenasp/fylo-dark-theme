@@ -16,12 +16,14 @@
 }
 
 /* Resert CSS */
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
+  line-height: 25px;
   color: var(--white);
 }
 
@@ -48,6 +50,12 @@ body figure {
   margin: 0;
   padding: 0;
 }
+
+body input,
+button {
+  outline: none;
+}
+
 /* End of reset */
 
 body {
@@ -58,7 +66,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 10px 40px;
+  padding: 15px 20px 40px;
   background-color: var(--intro-bg);
 }
 
@@ -66,7 +74,7 @@ header figure img {
   display: flex;
   align-items: center;
   min-width: 100px;
-  max-width: 150px;
+  max-width: 200px;
   height: 30px;
 }
 
@@ -76,14 +84,22 @@ header figure img {
   padding: 0;
 }
 
-.header-nav li {
+.header-nav li a:hover {
+  text-decoration: underline;
+}
+
+.header-nav li:nth-of-type(1),
+li:nth-of-type(2) {
   padding-right: 12px;
 }
 
 .intro {
-  background: url(../images/bg-curvy-mobile.svg) center/cover no-repeat;
-  background-color: var(--intro-bg);
   padding: 30px;
+  background-color: var(--intro-bg);
+  background-image: url(../images/bg-curvy-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 60%;
 }
 
 .intro-container {
@@ -119,6 +135,7 @@ header figure img {
   font-weight: 700;
   background-color: var(--blue);
   color: var(--white);
+  cursor: pointer;
 }
 
 .product-details-container {
@@ -133,7 +150,6 @@ header figure img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 80px;
 }
 
 .stay-productive-container {
@@ -148,6 +164,7 @@ header figure img {
 
 .stay-productive-container figure img {
   height: 250px;
+  margin: 120px 0 30px 0;
 }
 
 .stay-productive-description {
@@ -210,8 +227,9 @@ header figure img {
   width: 35px;
 }
 
-.testimonial-card p {
-  line-height: 25px;
+.testimonial-card blockquote {
+  margin: 0 0 15px 0;
+  line-height: 20px;
 }
 
 .testimonial-person {
@@ -271,7 +289,7 @@ header figure img {
 
 .early-access-form input {
   min-width: 200px;
-  max-width: 400px;
+  max-width: 70%;
   height: 50px;
   margin-bottom: 20px;
   border: none;
@@ -283,6 +301,7 @@ header figure img {
   font-size: 16px;
   font-weight: 700;
   background-color: var(--blue);
+  cursor: pointer;
 }
 
 ::placeholder {
@@ -303,44 +322,66 @@ footer {
   margin-bottom: 30px;
 }
 
-.footer-info {
+.footer-info-container {
   display: flex;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 20px;
+  flex-direction: column;
 }
 
-.footer-info p {
+.footer-location {
+  display: inherit;
+}
+
+.footer-location p {
   margin: 0;
-  padding-left: 20px;
+  padding-left: 25px;
 }
 
-.footer-icons {
+.footer-location img {
   width: fit-content;
   height: fit-content;
+  padding-top: 5px;
+}
+
+.footer-info-contact .phone-number {
+  margin: 15px 0;
+}
+
+.footer-info-contact .phone-number span,
+.email-contact span {
+  padding-left: 15px;
 }
 
 .footer-links {
   margin-top: 30px;
 }
 
-.footer-links-nav {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  line-height: 30px;
-}
-
-.footer-links-nav ul {
-  margin: 0;
+.footer-links nav ul {
+  line-height: 35px;
   padding: 0;
 }
 
-.footer-links-nav li:nth-child(4) {
-  padding-bottom: 20px;
+.footer-links a:hover {
+  text-decoration: underline;
 }
 
-.footer-attribution-container {
+.footer-social-icons {
+  display: inherit;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.footer-social-icons .fa-facebook,
+.fa-twitter,
+.fa-instagram {
+  font-size: 20px;
+}
+
+.footer-social-icons .fa-facebook,
+.fa-twitter {
+  padding-right: 15px;
+}
+
+.footer-attribution {
   margin-top: 30px;
 }
 
@@ -351,4 +392,8 @@ footer {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+  text-decoration: underline;
 }
