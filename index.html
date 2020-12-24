@@ -11,13 +11,12 @@
     />
     <link
       rel="stylesheet"
-      href="./src/styles/mobile.css"
-      media="screen and (min-width: 320px)"
+      href="./src/css/styles.css"
     />
     <link
       rel="stylesheet"
-      href="./src/styles/desktop.css"
-      media="screen and (min-width: 1440px)"
+      href="./src/css/desktop.css"
+      media="screen and (min-width: 1120px)"
     />
     <title>Fylo landing page</title>
   </head>
@@ -151,11 +150,11 @@
             <figure>
               <img src="./src/images/bg-quotes.png" alt="Quotes testimonial" />
             </figure>
-            <p>
+            <blockquote>
               Fylo has improved our team productivity by an order of magnitude.
               Since making the switch our team has become a well-oiled
               collaboration machine.
-            </p>
+            </blockquote>
             <div class="testimonial-person">
               <img
                 src="./src/images/profile-1.jpg"
@@ -168,11 +167,11 @@
             </div>
           </div>
           <div class="testimonial-card">
-            <p>
+            <blockquote>
               Fylo has improved our team productivity by an order of magnitude.
               Since making the switch our team has become a well-oiled
               collaboration machine.
-            </p>
+            </blockquote>
             <div class="testimonial-person">
               <img
                 src="./src/images/profile-2.jpg"
@@ -185,11 +184,11 @@
             </div>
           </div>
           <div class="testimonial-card">
-            <p>
+            <blockquote>
               Fylo has improved our team productivity by an order of magnitude.
               Since making the switch our team has become a well-oiled
               collaboration machine.
-            </p>
+            </blockquote>
             <div class="testimonial-person">
               <img
                 src="./src/images/profile-3.jpg"
@@ -233,65 +232,70 @@
         <div class="footer-logo">
           <img src="./src/images/logo.svg" alt="Logo of Fylo Company" />
         </div>
-        <section class="footer-contact-container">
-          <div class="footer-info">
-            <img
-              src="src/images/icon-location.svg"
-              class="footer-icons icon-location"
-              alt="Icon location"
-            />
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </p>
-            </div>
+        <div class="footer-info-container">
+          <div class="footer-location">
+              <img
+                src="src/images/icon-location.svg"
+                class="footer-icons icon-location"
+                alt="Icon location"
+              />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </p>
           </div>
-          <div class="footer-info">
-            <img
-              src="src/images/icon-phone.svg"
-              class="footer-icons"
-              alt="Icon phone"
-            />
-            <p>+1-543-123-4567</p>
+          <div class="footer-info-contact">
+              <div class="phone-number">
+                <img
+                  src="src/images/icon-phone.svg"
+                  class="footer-icons"
+                  alt="Icon phone"
+                />
+                <span>+1-543-123-4567</span>
+              </div>
+              <div class="email-contact">
+                <img
+                  src="src/images/icon-email.svg"
+                  class="footer-icons"
+                  alt="Icon email"
+                />
+                <span>support@fylo.com</sá>
+              </div>
           </div>
-          <div class="footer-info">
-            <img
-              src="src/images/icon-email.svg"
-              class="footer-icons"
-              alt="Icon email"
-            />
-            <p>support@fylo.com</p>
+          <div class="footer-links">
+            <nav>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+            </nav>
           </div>
-        </section>
-        <section class="footer-links">
-          <nav class="footer-links-nav">
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Jobs</a></li>
-              <li><a href="#">Press</a></li>
-              <li><a href="#">Blog</a></li>
-
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Privacy</a></li>
-            </ul>
-          </nav>
-        </section>
-        <section class="footer-attribution-container">
-          <p class="attribution">
-            Challenge by
-            <a
-              href="https://www.frontendmentor.io?ref=challenge"
-              target="_blank"
-              >Frontend Mentor</a
-            >. Coded by
-            <a href="https://www.github.com/johncardenasp" target="_blank"
-              >@johncardenasp</a
-            >.
-          </p>
-        </section>
+          <div class="footer-social-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
       </div>
+      <section class="footer-attribution">
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://www.github.com/johncardenasp" target="_blank"
+            >@johncardenasp</a
+          >.
+        </p>
+      </section>
     </footer>
+    <script src="https://kit.fontawesome.com/823b37be3d.js" crossorigin="anonymous"></script>
   </body>
 </html>

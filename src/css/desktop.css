@@ -1,0 +1,160 @@
+header {
+  padding: 15px 100px 0;
+}
+
+.header-nav ul li:nth-of-type(1),
+li:nth-of-type(2) {
+  padding-right: 35px;
+}
+
+header figure img {
+  min-width: 150px;
+  height: 40px;
+}
+
+.intro {
+  background-image: url(../images/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 40%;
+  padding: 30px 0 0 0;
+  margin-bottom: 10%;
+}
+
+.intro-container {
+  width: 35%;
+  margin: 0 auto;
+}
+
+.intro-image-bg img {
+  min-width: 500px;
+  height: 350px;
+}
+
+.product-details-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 60px;
+  max-width: 80%;
+  margin-bottom: 10%;
+}
+
+.product-details-content {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.stay-productive-container {
+  flex-direction: row;
+  max-width: 80%;
+  margin: 0 auto 10%;
+}
+
+.stay-productive-container figure img {
+  height: 380px;
+}
+
+.stay-productive-description {
+  padding-left: 40px;
+}
+
+.stay-productive-description h3 {
+  font-size: 45px;
+  line-height: normal;
+}
+
+.testimonial-container {
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+.testimonial-card {
+  max-width: 25%;
+  margin: 15px;
+}
+
+.early-access-card {
+  max-width: 70%;
+  height: 300px;
+  margin: 60px auto 0;
+}
+
+.early-access-description {
+  padding: 20px 60px 20px 60px;
+}
+
+.early-access-form input:nth-of-type(1) {
+  width: 55%;
+  margin-right: 30px;
+}
+
+.early-access-form input:nth-of-type(2) {
+  width: 30%;
+}
+
+footer {
+  padding: 18em 2em 1em 2em;
+}
+
+.footer-container {
+  max-width: 100%;
+  margin: 0;
+}
+
+.footer-info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 20% 20%;
+  align-items: flex-start;
+  justify-items: center;
+}
+
+.footer-location {
+  display: flex;
+}
+
+.footer-location p {
+  padding-left: 15px;
+}
+
+.footer-location img {
+  padding-top: 5px;
+}
+
+.footer-info-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-info-contact .phone-number {
+  margin: 0 0 10px 0;
+}
+
+.footer-info-contact .phone-number span,
+.email-contact span {
+  padding-left: 10px;
+}
+
+.footer-info-contact .footer-icons {
+  padding-top: 5px;
+}
+
+.footer-links {
+  margin: 0;
+}
+
+.footer-links nav ul:first-child {
+  margin: 0 0 20px 0;
+}
+
+.footer-links nav li {
+  padding: 0;
+}
+
+.footer-social-icons {
+  display: inline;
+  margin: 0;
+}
+
+.footer-attribution {
+  margin-top: 50px;
+}
